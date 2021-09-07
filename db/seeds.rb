@@ -9,6 +9,6 @@
 
 User.delete_all
 
-User.create!( name: "JimU", email: "jimu@jimu.net")
-User.create!( name: "KirkB", email: "kirkb@jimu.net")
-User.create!( name: "MarkR", email: "markr@jimu.net")
+User.create!( name: "JimU",  email: "jimu@jimu.net",  avatar_url: "cody_plain_260x260.png")
+User.create!( name: "KirkB", email: "kirkb@jimu.net", avatar_url: "kirkb_plain_260x260.png")
+User.create!( name: "MarkR", email: "markr@jimu.net", avatar_url: "markr_plain_260x260.png")
