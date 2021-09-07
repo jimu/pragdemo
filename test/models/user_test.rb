@@ -33,4 +33,11 @@ class UserTest < ActiveSupport::TestCase
     assert_equal [I18n.translate('errors.messages.taken')], user.errors[:name]
   end
 
+  test "username should be at least 3 characters long" do
+    user = users(:one)
+    user.name = "ab"
+    assert user.invalid?
+    assert_equal ["is too short (minimum is 3 characters)"], user.errors[:name]
+  end
+
 end
