@@ -1,2 +1,12 @@
 <h1>Hello from rails</h1>
-<p>It is now <%= Time.now %></p>
+<p>It is now <%= @time %></p>
+<p>Later will be <%= @later %>
+
+<p><%= link_to "Goodbye", say_goodbye_path %>
+
+<h3>Files in <%= Dir.pwd %></h3>
+<ul>
+<% Dir.glob("*").each do |f| %>
+  <li><%= f %>
+<% end %>
+</ul>
